@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
+  page = {
+    title: 'Home',
+    subtitle: 'Welcome Home!',
+    content: 'Some home content.',
+    image: 'assets/bg00.jpg'
+  };
+
   constructor() { }
 
   ngOnInit(): void {
