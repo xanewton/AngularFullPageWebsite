@@ -2,4 +2,18 @@
   {{title}}
 </h1>
 
-<app-page></app-page>
+<mat-toolbar color="primary">
+  <h1><span class="light">SUPER</span>LOGO</h1>
+  <span class="spacer"></span>
+  <a mat-button
+    [routerLink]="['home']"
+    routerLinkActive="active">HOME</a>
+  <a mat-button
+    [routerLink]="['about']"
+    routerLinkActive="active">ABOUT</a>
+  <a mat-button
+    [routerLink]="['contact']"
+    routerLinkActive="active">CONTACT</a>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
